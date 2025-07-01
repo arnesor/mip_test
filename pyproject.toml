@@ -8,10 +8,12 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "ortools (>=9.14.6206,<10.0.0)"
 ]
 
 [tool.poetry]
-packages = [{include = "mip", from = "src"}]
+package-mode = false
+#packages = [{include = "mip", from = "src"}]
 
 
 [build-system]
