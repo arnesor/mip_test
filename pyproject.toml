@@ -1,0 +1,29 @@
+[project]
+name = "mip_test"
+version = "0.1.0"
+description = "Test of Mixed Integer Programming (MIP) model solving in python"
+authors = [
+    {name = "Arne Sørli",email = "arnesor@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "ortools (>=9.14.6206,<10.0.0)",
+    "mip (>=1.15.0,<2.0.0)",
+    "pandas (>=2.3.0,<3.0.0)",
+    "pandas-stubs (>=2.2.3.250527,<3.0.0.0)"
+]
+
+[tool.poetry]
+package-mode = false
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+pre-commit = "^4.2.0"
+pre-commit-hooks = "^5.0.0"
+ruff = "^0.12.1"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
